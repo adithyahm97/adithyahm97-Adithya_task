@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="header">
+        <div class="logo">
+          <h1>Logo</h1>
+        </div>
+        <div class="url">
+          <p>www.example.com</p>
+        </div>
+      </div>
+      <div class="body">
+        <form
+          action=""
+          onsubmit="return validateFormOnSubmit(this)"
+          method="POST"
+          data-netlify="true"
+          id="form"
+        >
+          <div class="name">
+            <input
+              type="text"
+              name="username"
+              id="name"
+              placeholder="USERNAME"
+            />
+          </div>
+          <div class="password">
+            <input
+              type="password"
+              name="password"
+              id="pwd"
+              placeholder="PASSWORD"
+            />
+          </div>
+          <div class="btn">
+            <button type="submit">LOGIN</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <p>
+          @example 2020. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </body>
+  <!-- Javascript-->
+  <script src="main.js"></script>
+  <!-- jQuery-->
+  <script src="jquery.js"></script>
+</html>

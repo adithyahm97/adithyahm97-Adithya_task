@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-image: url("images/background.svg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+}
+
+#wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.25rem;
+}
+
+.logo,
+.url {
+  padding: 0.5rem;
+}
+
+.url p {
+  padding: 0.5rem;
+}
+
+.header .logo h1 {
+  color: darkred;
+  font-style: italic;
+  background-image: url("images/button_bg.jpg");
+}
+
+.header .url {
+  color: darkred;
+  font-size: x-large;
+}
+
+.header .url p:hover {
+  color: darkgreen;
+  font-size: x-large;
+}
+
+.body {
+  position: relative;
+  text-align: center;
+  height: auto;
+  margin: 0.5rem;
+  padding: auto;
+  width: auto;
+}
+
+form {
+  height: fit-content;
+  width: fit-content;
+  padding: 1.5rem;
+  position: relative;
+  background: white;
+  text-align: center;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: 5% 5% 0 0;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+}
+
+input {
+  border: 2px solid black;
+  padding: 0.25rem;
+}
+
+.btn {
+  font-family: "Times New Roman", Times, serif;
+}
+
+button {
+  color: white;
+  padding: 0.25rem;
+  background-image: url("images/button_bg.jpg");
+  border: none;
+}
+
+.footer {
+  text-align: center;
+  font-weight: bolder;
+  background-image: url("images/footer_bg.jpg");
+  padding: 0.5rem;
+}
+
+.copyright {
+  height: fit-content;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    overflow: hidden;
+    background-image: url("images/background.svg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+  }
+
+  #wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    position: fixed;
+  }
+
+  .header {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .body {
+    position: relative;
+    text-align: center;
+    height: fit-content;
+    margin: 0.5rem;
+    padding: fit-content;
+    width: auto;
+  }
+
+  .form {
+    padding: 0.5rem;
+  }
+}
